@@ -1,3 +1,5 @@
+import 'package:app_2/pages/home/home.page.dart';
+import 'package:app_2/pages/users/users.page.dart';
 import 'package:flutter/material.dart';
 
 void main()=>runApp(MyApp());
@@ -20,31 +22,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Home"),),
-      drawer: Drawer(),
-      body: Center(
-        child: Text("Bienvenu"),
-      ),
-    );
-  }
-}
-
-class UsersPage extends StatelessWidget {
-  const UsersPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("User", style: Theme.of(context).textTheme.headline3,),),
-      body: Center(
-        child: Text("Users"),
-      ),
-    );
-  }
-}
